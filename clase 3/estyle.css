@@ -1,0 +1,60 @@
+
+        /*  Comentar en css */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+        p {
+            color: olive;
+            font-size: 22px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic; 
+        }
+      
+        }
+        .div1 {
+            background: aquamarine;
+            color: black;
+            width: 60%;
+            height: 250px;
+        }
+        .sinestilo {
+            color: violet;
+            background: yellow;
+            width: 33.33%;
+            height: 150px;
+
+        }
+        .resaltar p {
+            color: greenyellow;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .resaltar p strong {
+            color: cornflowerblue;
+            font-size: 14px;
+            font-weight: 900;
+        }
+.izquierda {
+    background: chocolate;
+    text-align: left;
+}
+.derecha {
+ background: khaki;
+ text-align: right;
+}
+.centrado {
+background: lawngreen;
+text-align: center;
+}
+.titulo {
+    background: darkgrey;
+    border: 2px solid black;
+}
+.titulo h1 {
+    color: teal;
+    font-size: 45px;
+    text-align: center;    
+    text-decoration: line-through;
+}

@@ -1,0 +1,27 @@
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.titulo {
+    background: yellow;
+    height: 150px;
+}
+h1 {
+    background: blue;
+    padding-top: 30px;
+    padding-left: 30px; 
+    padding-bottom: 100px;
+}
+.parrafo {
+    background: violet;
+    margin-bottom: 30px;
+}
+.parrafo p {
+    padding: 100px 40% 5px;
+    text-align: justify;
+}
+.aburrido {
+    background: green;
+    height: 150px;
+}

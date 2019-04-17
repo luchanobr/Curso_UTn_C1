@@ -1,0 +1,28 @@
+Mail contacto alumnos: linkmultimedial@gmail.com
+Santiago Nobile asist. coordinador 
+ingrid kitaink coordinadora.
+Doncente Franco 
+Inansistencias maximas: 4
+pwd wifi bacg2m
+ultima clase 2 semanas para entregar el tp
+consignas
+4 paginas (angular + node.js + mysql/mongo)
+tutorias: clases de apoyo dileo.franco@gmail.com
+Slack link: 
+github: online git : offline bitbucket : online
+Visual studio Code ()
+sublime text 3
+brackets
+download visual studio code (googlear)
+nic.ar registrar DNS tener clave fiscar nivel 3 270 aprox un año de duracion
+Servidor: 
+000webhost
+donweb
+godaddy
+AWS Amazon web service
+
+Puerto: 80  por defecto de HTML
+21 FTP
+(80)
+(443 SSL) conexiones seguras
+25 smtp enbio de mails

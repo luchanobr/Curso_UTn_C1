@@ -1,0 +1,21 @@
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.contenedor {
+     background: papayawhip;
+     display: flex;
+     width: 100%;
+     height: 600px;
+     flex-flow: nowrap;
+     justify-content: space-evenly;  
+     /* mismo espacio entre borde y elementos */
+     align-items: center;
+}
+.contenido {
+    background: olivedrab;
+    height: 200px;
+    width: 15%;
+    border: 1px solid black;
+    flex: 0 1 auto;

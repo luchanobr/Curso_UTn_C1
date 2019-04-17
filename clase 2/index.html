@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" >
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- git bash 3 comandos
+        ls -> muestra todos los archivos del direnctorio en el que estoy
+        cd -> change directory con tab autocompleto
+        git clone (URL) https://github.com/dileofrancoj/PWI_1C_TN -> clona el repositorio en la PC -->
+ <!-- Formularios : son elementos para que el usuario ingrese informacion a su vez con esa informacion vamos a hacer un conjuto de tablas dentro de una base de datos -->
+    <form action="" method="">
+        <!-- action : pagina o archivo o ruta a la que se enviara la informacion 
+            method : GET ( enviar informacion a traves de la url)
+                     POST (enviar agregar informacion nueva a la tabla informacion de forma interna)
+                     PUT actualizar informcion en la tabla, DELETE borrar en la tabla 
+                     VERBOS HTTP     -->
+        <!-- laber muestra texto dentro de su etiquieta el atriubuto "for lee lo que dice " -->
+        <label for="Usuario">Usuario</label>
+        <input type="text" placeholder="Pepe1" name="user">
+        <p>Nombre</p>
+        <input type="text" name="nombre_usuario">
+        <p>Correo electronico</p>
+        <!-- value : dato ya creado en la base de datos -->
+        <input type="mail" value="micorreo@gmail.com" placeholder="mail@example.com" name="mail">
+        <p>Ingresa tu contraseña</p>
+        <input type="password" name="contraseña" required>
+        <!-- required : quiere que el campo del input tenga contenido olibatorio es un atributo -->
+        <p>Repetir contraseña</p>
+        <input type="password" name="contraseña_1">
+        <p>Ingresa la foto mas fea que tengas</p>
+        <input type="file" name="foto_perfil">
+        <br>
+        <textarea rows="10" cols="50" name="cometarios"> Escribi un comentario</textarea>
+        <p>Elegir un color</p>
+        <input type="color" name="color_fondo">
+        <p>Fecha de nacimiento:</p>
+        <input type="date" name="fecha_nac" id="">
+         <br>
+         <p>Selecciona un pais</p>
+         <!-- select -->
+         <select name="pais">
+            <option value="0">Argentina</option>
+            <option value="1">Uruguay</option>
+            <option value="2">China</option>
+         </select>
+         <br><br>
+        <button type="button">Enviar</button>
+      
+    </form>
+</body>
+</html>
