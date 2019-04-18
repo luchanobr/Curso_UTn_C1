@@ -1,0 +1,64 @@
+#recuadro1 {
+    width: 25%;
+    background: #aaa;
+    color: black;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 20px 10px 30px red;
+}
+.sombra {
+    color: green;
+    text-shadow: 15px 15px 10px brown;
+}
+#recuadro2 {
+    width: 20%;
+    border-radius: 15px;
+    background: crimson;
+    padding: 15px;
+    color: white;
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+}
+
+#recuadro3 {
+    width: 20%;
+    background: olive;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    margin-left: 50px;
+}
+#recuadro3:hover {
+    transform: scalex(1.3);
+    transition: 1.5s;
+}
+#recuadro2:hover {
+    transform: rotate(360deg);
+    transition: 5s;
+}
+
+#recuadro4{
+    background: fuchsia;
+    width: 20%;
+    padding: 20px;
+    border-radius: 20px;
+}
+#recuadro4:hover {
+    transform: translate(400px, 600px);
+    transition: 3000ms;
+}
+a{
+    font-size: 20px;
+}
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: red;
+}
