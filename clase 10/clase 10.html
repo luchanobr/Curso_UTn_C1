@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 10</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <input type="text" id="text1">
+    <span id="restantes">250</span>
+    <select id="comida">
+        <option value="papitas con chedar">Papas</option>
+        <option value="birrita">Cerveza</option>
+        <option value="hamburguesa">Big Mac</option>
+    </select>
+    <input type="text" id="comidaElegida" placeholder="Tu comida favorita es ....">
+
+    <script>
+
+        // almacenamos la cantidad de caracrres que tiene el input y se la restamos a 250.
+        // cuando presionamos una tecla= evento.
+
+        addEventListener("load", comenzar)   // es una funcion propia que tiene 2 parametros.
+
+
+        function comenzar() {
+            document.getElementById("comida").addEventListener("change",papitas);
+            document.getElementById("text1").addEventListener("keyup", contarcaracteres);
+        }
+        function contarcaracteres() {
+            let cantidad = parseInt(document.getElementById("text1").value.length);
+            let queda = 250 - cantidad;
+            document.getElementById("restantes").innerHTML = queda;
+            // innterHTML es una propiedad que se desprende de la referencia a un elemento html y modifica u obtiene el valor que hay dentro.
+        }
+        function papitas(){
+           let favcomida = document.getElementById("comida").value;
+           document.getElementById("comidaElegida").value = "Tu comida favorita es" + favcomida;
+        }
+        
+
+            // setInterval(funcionAejecutar, intervalo) es una funcion que ejecuta una funcion cada cierto periodo de tiempo, tiene 2 parametros el primero la funcion a ejecutar y la segunda los milisegundos de intervalo entre la ejecucion de la funcion.
+
+            setInterval(contador,1000)
+            function contador (){
+                var numerito = parseInt(document.getElementById("reloj").innerHTML); 
+                numerito++;
+
+            }
+
+
+
+    </script>
+
+<!-- 
+ // tarea  proxima clase  
+ 2 eventos blur = se ejecuta cuando un elemento pierde el foco
+           inpumto text id usuario cuando ese elemento pierda el foco. comprobar usuario.
+           codear 3 funciones que se ejecuten cuando los inputs usuario main y dni pierdan el foco.
+           si usuario mail o dni tiene menos de 3 caracteres. que se pongan en rojo. 
+           para cambiar cualqueir estilo css  me meto dentor del elemto y la clavo un .style.border = "1 px solid tomato"  -->
+           <!-- SI NO CUMPLE SE NO SE BORRA EL VALUE Y SALE UN INNRHTML QUE AVISA QUE ES INVALIDO. -->
+
+
+    <!-- tarea 2  
+    
+    3 inputs de numeros, si no hay numeros esta en rojos. tipo calculadora 
+    4 botones: suma, resta multi o division. 
+    el resultado debe mostrarse en una etiqueta span
+    es obligatorio completar los resultados.
+
+    todos los resultados que opero el usuario deben ser almacenados en un array historial. y con un boton mostrar el historial.-
+    
+    -->
+</body>
+
+</html>

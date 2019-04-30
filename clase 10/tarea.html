@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tarea</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+     .rojo{
+         border: 3px solid red !important;
+         
+     }
+     .letrarojo{
+        color:  red !important;
+     }
+    
+    </style>
+</head>
+<body>
+    
+<div class="container">
+<form>
+<div class="form-row mt-5">
+    <div class="form-group col-12 py-5">
+      
+      <input type="text" name="" id="usuario" class="form-control" placeholder="Usuario" aria-describedby="helpId">
+      <span class="small text-muted" id="errorUsuario">Usuario debe tener mas de 2 caracteres</span>
+     
+    </div>
+    
+</div>
+ <div class="form-row">
+     <div class="form-group col-12 py-5">
+     <input type="email" name="" id="mail" class="form-control" placeholder="mail">
+ </div>
+</div>
+
+<div class="form-row">
+        <div class="form-group col-12 py-5">
+    <input type="text" name="" id="dni" class="form-control" placeholder="DNI">
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group col-12">
+        <button type="submit" class="btn btn-success btn-block">Enviar</button>
+    </div>
+</div>
+</form>
+</div>
+
+</div>
+
+<script>
+
+addEventListener("load", comenzar);
+
+function comenzar(){
+    document.getElementById("usuario").addEventListener("blur",controlUsuario);
+    document.getElementById("mail").addEventListener("blur",controlMail);
+    document.getElementById("dni").addEventListener("blur",controlDni); 
+}
+function controlUsuario(){
+    let largousuario = parseInt(document.getElementById("usuario").value.length);
+    if(largousuario<3){
+        document.getElementById("usuario").classList.add("rojo");
+        document.getElementById("usuario").value=null;
+        document.getElementById("errorUsuario").classList.add("letrarojo");
+        document.getElementById("errorUsuario").innerHTML = "Usuario incorrecto !!"
+    }  else {
+        document.getElementById("usuario").classList.remove("rojo");
+        document.getElementById("errorUsuario").innerHTML = "";
+        document.getElementById("errorUsuario").classList.remove("letrarojo");
+        document.getElementById("errorUsuario").innerHTML = "Usuario debe tener mas de 2 caracteres";
+    }
+}
+
+</script>
+
+</body>
+</html>

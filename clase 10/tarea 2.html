@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row my-5">
+
+            <div class="col-4">
+                <input type="text" id="num1" class="form-control">
+            </div>
+            <div class="col-4">
+                <input type="text" id="num2" class="form-control">
+            </div>
+            <div class="col-4">
+                <input type="text" id="num3" class="form-control">
+
+
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-3">
+                <button type="button" id="sumar" class="btn btn-primary btn-block">Sumar</button>
+            </div>
+            <div class="col-3">
+                <button type="button" id="restar" class="btn btn-primary btn-block">Restar</button>
+            </div>
+            <div class="col-3">
+                <button type="button" id="multiplicar" class="btn btn-primary btn-block">Multiplicar</button>
+            </div>
+            <div class="col-3">
+                <button type="button" id="dividir" class="btn btn-primary btn-block">Dividir</button>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-6">
+            <span class="form-control" id="resultado"></span>
+            </div>
+        </div>
+    </div>
+<script>
+
+addEventListener("load",comenzar);
+
+let num1 = parseInt(document.getElementById("num1").value);
+let num2 = parseInt(document.getElementById("num2").value)
+let num3 = parseInt(document.getElementById("num3").value)
+function comenzar(){
+    
+    document.getElementById("num1").addEventListener("blur",habilitar);
+    document.getElementById("num2").addEventListener("blur",habilitar);
+    document.getElementById("num3").addEventListener("blur",habilitar);
+
+    function habilitar (){
+
+    if (num1 == "" && num2 == "" && num3 == ""){
+        document.getElementById("sumar").setAttribute("enabled", false);
+    } else { 
+        document.getElementById("sumar").setAttribute("enabled", true);
+    }
+    }
+}
+
+
+</script>
+
+</body>
+
+</html>
